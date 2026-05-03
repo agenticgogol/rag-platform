@@ -1,0 +1,17 @@
+fastapi
+uvicorn
+streamlit
+requests
+pypdf
+beautifulsoup4
+langchain
+langchain-community
+langchain-openai
+langchain-qdrant
+langchain-text-splitters
+qdrant-client
+python-dotenv
+pydantic-settings
+python-multipart
+lxml
+pillow

@@ -1,0 +1,16 @@
+  190  uvicorn app.main:app --reload
+  191  uvicorn app.main:app --reload
+  192  docker build -f Docker/Dockerfile.backend -t rag-backend:v1 .
+  193  docker images
+  194  docker run -d \\n-p 8000:8000 \\n--name rag-backend \\n--env-file .env \\nrag-backend:v1
+  195  lsof -i :8000
+  196  docker ps
+  197  docker stop rag-test\ndocker rm rag-test
+  198  docker run -d \\n-p 8000:8000 \\n--name rag-backend \\n--env-file .env \\nrag-backend:v1
+  199  docker ps
+  200  docker run -d \\n-p 8000:8000 \\n--name rag-backend \\n--env-file .env \\nrag-backend:v1
+  201  docker rm rag-backend
+  202  docker run -d \\n-p 8000:8000 \\n--name rag-backend \\n--env-file .env \\nrag-backend:v1
+  203  docker run -d \\n-p 8501:8501 \\n--name rag-frontend \\n-e BACKEND_URL=http://host.docker.internal:8000 \\nrag-frontend:v1
+  204  docker rm -f rag-backend rag-frontend
+  205  docker compose up --build

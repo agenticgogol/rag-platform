@@ -1,0 +1,16 @@
+  166  uvicorn app.api.main:app
+  167  uvicorn app.api.main:app
+  168  history > terminal_history>2.txt
+  169  history > terminal_history2.txt
+  170  clear
+  171  uvicorn app.api.main:app
+  172  uvicorn app.api.main:app --host 0.0.0.0 --port 8001
+  173  source myenv/bin/activate
+  174  streamlit run frontend/streamlit_app.py
+  175  streamlit run frontend/streamlit_app.py
+  176  streamlit run frontend/streamlit_app.py
+  177  streamlit run frontend/streamlit_app.py
+  178  streamlit run frontend/streamlit_app.py
+  179  streamlit run frontend/streamlit_app.py
+  180  docker build -f Docker/Dockerfile.frontend -t rag-frontend:v1 .
+  181  history_terminal2.txt
